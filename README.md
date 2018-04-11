@@ -1,0 +1,2 @@
+# CustomStyle
+Qt custom style 
