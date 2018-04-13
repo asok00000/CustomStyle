@@ -1,6 +1,8 @@
 #include "customstyleexample.h"
 #include <QComboBox>
 #include <QStyledItemDelegate>
+#include <QTableView>
+#include <QDebug>
 CustomStyleExample::CustomStyleExample(QWidget *parent)
 	: QMainWindow(parent)
 {
