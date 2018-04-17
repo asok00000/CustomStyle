@@ -1248,3 +1248,240 @@ QListView[type=danger]::item:selected
 	background-color:#ac2925;
 	color:#fff;
 }
+/*QTreeView*/
+QTreeView::item
+{
+	height:28px;
+}
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings
+{
+	image:url(Resources/images/little-arrow-down-black.png);
+	border-image: none;
+}
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings
+{
+	image:url(Resources/images/little-arrow-right-black.png);
+	border-image: none;
+}
+QTreeView
+{
+	border:1px solid #ccc;
+	outline:none;
+}
+QTreeView::item:hover
+{
+	background-color:#e6e6e6;
+}
+QTreeView::item:selected
+{
+	background-color:#d6d6d6;
+	color:#000;
+}
+QTreeView QHeaderView
+{
+	border:1px solid #ccc;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+	
+}
+QTreeView QHeaderView::section
+{
+	background-color:#e6e6e6;
+	border:1px solid transparent;
+	height:24px;
+}
+QTreeView[type=primary]
+{
+	border:1px solid #2e6da4;
+	outline:none;
+	
+}
+QTreeView[type=primary]::item:hover
+{
+	background-color:#337ab7;
+	color:#fff;
+}
+QTreeView[type=primary]::item:selected
+{
+	background-color:#204d74;
+	color:#fff;
+}
+QTreeView[type=primary] QHeaderView
+{
+	border:1px solid #2e6da4;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+	
+}
+QTreeView[type=primary] QHeaderView::section
+{
+	background-color:#337ab7;
+	border:1px solid transparent;
+	height:24px;
+	color:#fff;
+}
+QTreeView[type=success]
+{
+	border:1px solid #4cae4c;
+	outline:none;
+	
+}
+QTreeView[type=success]::item:hover
+{
+	background-color:#449d44;
+	color:#fff;
+}
+QTreeView[type=success]::item:selected
+{
+	background-color:#398439;
+	color:#fff;
+}
+QTreeView[type=success] QHeaderView
+{
+	border:1px solid #4cae4c;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+	
+}
+QTreeView[type=success] QHeaderView::section
+{
+	background-color:#449d44;
+	border:1px solid transparent;
+	height:24px;
+	color:#fff;
+}
+QTreeView[type=info]
+{
+	border:1px solid #46b8da;
+	outline:none;
+	
+}
+QTreeView[type=info]::item:hover
+{
+	background-color:#31b0d5;
+	color:#fff;
+}
+QTreeView[type=info]::item:selected
+{
+	background-color:#269abc;
+	color:#fff;
+}
+
+QTreeView[type=info] QHeaderView
+{
+	border:1px solid #46b8da;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+	
+}
+QTreeView[type=info] QHeaderView::section
+{
+	background-color:#31b0d5;
+	border:1px solid transparent;
+	height:24px;
+	color:#fff;
+}
+QTreeView[type=warning]
+{
+	border:1px solid #eea236;
+	outline:none;
+	
+}
+QTreeView[type=warning]::item:hover
+{
+	background-color:#ec971f;
+	color:#fff;
+}
+QTreeView[type=warning]::item:selected
+{
+	background-color:#d58512;
+	color:#fff;
+}
+QTreeView[type=warning] QHeaderView
+{
+	border:1px solid #eea236;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+	
+}
+QTreeView[type=warning] QHeaderView::section
+{
+	background-color:#ec971f;
+	border:1px solid transparent;
+	height:24px;
+	color:#fff;
+}
+QTreeView[type=danger]
+{
+	border:1px solid #d43f3a;
+	outline:none;
+	
+}
+QTreeView[type=danger]::item:hover
+{
+	background-color:#c9302c;
+	color:#fff;
+}
+QTreeView[type=danger]::item:selected
+{
+	background-color:#ac2925;
+	color:#fff;
+}
+QTreeView[type=danger] QHeaderView
+{
+	border:1px solid #d43f3a;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+	
+}
+QTreeView[type=danger] QHeaderView::section
+{
+	background-color:#c9302c;
+	border:1px solid transparent;
+	height:24px;
+	color:#fff;
+}
+/*QTableView*/
+QTableView
+{
+	border:1px solid #ccc;
+	border:none;
+	qproperty-showGrid:"false";
+	qproperty-selectionBehavior:"QAbstractItemView::SelectRows";
+	selection-color:#000;
+	outline:none;
+}
+QTableView::item
+{
+	border:1px solid transparent;
+	border-bottom-color:#ccc;
+}
+QTableView::item:hover
+{
+	background-color:#e6e6e6;
+}
+QTableView::item:selected
+{
+	background-color:#ccc;
+}
+
+QTableView QHeaderView
+{
+	border:none;
+	
+}
+QTableView QHeaderView::section
+{
+	background-color:#e6e6e6;
+	border:1px solid transparent;
+	height:24px;
+	font-weight:bold;
+}

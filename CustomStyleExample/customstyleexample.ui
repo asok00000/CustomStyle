@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>978</width>
-    <height>704</height>
+    <height>712</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1464,6 +1464,42 @@ QTreeView[type=danger] QHeaderView::section
 	border:1px solid transparent;
 	height:24px;
 	color:#fff;
+}
+/*QTableView*/
+QTableView
+{
+	border:1px solid #ccc;
+	border:none;
+	qproperty-showGrid:&quot;false&quot;;
+	qproperty-selectionBehavior:&quot;QAbstractItemView::SelectRows&quot;;
+	selection-color:#000;
+	outline:none;
+}
+QTableView::item
+{
+	border:1px solid transparent;
+	border-bottom-color:#ccc;
+}
+QTableView::item:hover
+{
+	background-color:#e6e6e6;
+}
+QTableView::item:selected
+{
+	background-color:#ccc;
+}
+
+QTableView QHeaderView
+{
+	border:none;
+	
+}
+QTableView QHeaderView::section
+{
+	background-color:#e6e6e6;
+	border:1px solid transparent;
+	height:24px;
+	font-weight:bold;
 }</string>
   </property>
   <widget class="QWidget" name="centralWidget">
@@ -1937,11 +1973,16 @@ QTreeView[type=danger] QHeaderView::section
        <string notr="true">QTableView
 {
 	border:1px solid #ccc;
-	
-}</string>
+	border:none;
+}
+QTableView::item
+{
+	border:none;
+}
+</string>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <property name="tabsClosable">
        <bool>true</bool>
@@ -2493,7 +2534,7 @@ QCalendarWidget[type=&quot;primary&quot;] QCalendarView
            <string notr="true"/>
           </property>
           <property name="gridVisible">
-           <bool>true</bool>
+           <bool>false</bool>
           </property>
           <property name="horizontalHeaderFormat">
            <enum>QCalendarWidget::LongDayNames</enum>
@@ -2512,7 +2553,7 @@ QCalendarWidget[type=&quot;primary&quot;] QCalendarView
            <string notr="true"/>
           </property>
           <property name="gridVisible">
-           <bool>true</bool>
+           <bool>false</bool>
           </property>
           <property name="horizontalHeaderFormat">
            <enum>QCalendarWidget::LongDayNames</enum>
@@ -3104,6 +3145,12 @@ QCalendarWidget[type=&quot;primary&quot;] QCalendarView
        <layout class="QVBoxLayout" name="verticalLayout_7">
         <item>
          <widget class="QTableWidget" name="tableWidget">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
           <row>
            <property name="text">
             <string>新建行</string>
